@@ -1,0 +1,52 @@
+.head{width: 100%;height: 32px;background: #f7f7f7;border-bottom: 1px solid #cccccc;min-width: 1200px;}
+.head-title{width: 1200px;height: 32px;margin: 0 auto;}
+.head-title ul{float: right;}
+.head-title ul li{float: left;height: 32px;line-height: 32px;color: #808080;}
+.head-title ul li a{color:#808080;height: 32px;line-height: 32px;}
+.head-title ul li.notice img{vertical-align: middle;}
+.head-title ul li.Vxin{margin-right:2px ;cursor: pointer;position: relative;}
+.Vxin img,.Vbo img{vertical-align: middle;}
+
+
+
+
+.logoarea{width: 1200px;height:50px;margin: 0 auto;margin-top:28px;margin-bottom: 10px;}
+.logoarea .search{width: 438px;height: 50px;float: right;}
+.logoarea .search .search1{width: 315px;height: 29px;float: left;}
+.logoarea .search .search1 .text{width: 259px;height:25px;border: 1px solid #c9c9c9;color: #000000;}
+.logoarea .search .search1 .submit{width: 47px;height: 27px;background: #b61b21;border: 1px solid #C9C9C9;border-left: none;cursor: pointer;color: white;}
+.logoarea .search .search2{width: 106px;height: 29px;float: right;position: relative;}
+.logoarea .search .search2 .active{display: block;width: 104px;height: 26px;border: 1px solid #c1383e;color: white;background: blue;
+						text-align: center;line-height: 27px;background:url(http://i2.vanclimg.com/cms/20150228/vanclsprite.png) no-repeat scroll -154px 0px;font-family: Arial;}
+#num{font-style: normal;}
+.logoarea .search .search2 .hover{display: block;width: 104px;height: 25px;border: 1px solid #c1383e;color:#B61B21;border-bottom: 1px solid #FFFFFF;z-index: 55;position: relative;
+						text-align: center;line-height: 27px;background:url(http://i2.vanclimg.com/cms/20150228/vanclsprite.png) no-repeat scroll -153px -29px;font-family: Arial;}
+.logoarea .search .search2 .carTab{display: none;width:335px;height: auto;border: 1px solid #B81B22;background: white;position: absolute;right: 0;top: 26px;z-index: 50;} 
+.logoarea .search .search2 .shoppingcar{height: auto;position: relative;}
+.logoarea .search .search2 .carTab .nogoods{display: none;width: 307px;height: 14px;padding: 5px 6px 5px 6px ;}
+.logoarea .search .search2 .carTab .addGoods{width: 305px;height: auto;margin-bottom: 14px;padding-left: 20px;}
+.logoarea .search .search2 .carTab .addGoods h6{padding-top: 14px;padding-bottom: 10px;font-weight: normal;border-bottom: 1px solid #ececec;width: 285px;} 
+.logoarea .search .search2 .carTab .addGoods .hasGoods{width: 285px;height: 35px;padding-top: 8px;padding-bottom: 15px;}
+.logoarea .search .search2 .carTab .addGoods .hasGoods .goodsImg{width: 38px;height: 33px;float: left;margin-left: 9px;}
+.logoarea .search .search2 .carTab .addGoods .hasGoods .goodsName{width: 210px;height:33px;float: left;}
+.logoarea .search .search2 .carTab .addGoods .hasGoods .goodsName p a:hover{color: #B61B21;}
+.logoarea .search .search2 .carTab .addGoods .hasGoods .delete{width:24px;height: 30px;float: left;line-height: 33px;color:#B81B22;padding-top: 3px;cursor: pointer;}
+#addprice{font-size: 12px;font-weight: normal;color: #B81B22;font-family: "宋体";margin-top: 5px;}
+.logoarea .search .search2 .carTab .addGoods .total{width: 285px;height: 35px;border-top: 1px solid #ececec;}
+.logoarea .search .search2 .carTab .addGoods .total .totalprice{width: 174px;height: 26px;padding-top: 6px;float: left;color: #a3a3a3;}
+.logoarea .search .search2 .carTab .addGoods .total .checkCar{width: 110px;height: 29px;background:#b81c22;text-align: center;line-height: 29px;color: white;float: left;cursor: pointer;font-family: arial;margin-top: 6px;}
+.logoarea .search #remen{width:438px;height:22px;float: left;line-height: 22px;}
+.logoarea .search #remen p a{color: #808080;font-size: 10px;}
+.logoarea .search #remen p span{color: #808080;font-size: 10px;margin-left: 7px;}
+
+
+.logonav{width: 1200px;height: 46px;margin: 0 auto;}
+.logonav .logo{width: 186px;height: 45px;float: left;}
+.logonav .nav{width: 1014px;height: 45px;float: left;}
+.logonav .nav ul{width: 994px;height: 21px;margin-top: 26px;padding-left: 20px;}
+.logonav .nav ul li{float: left;width: 96px;height: 21px;font-size: 16px;text-align: center;color: #888888;padding-bottom: 8px;}
+.logonav .nav ul li .line{display: block;height: 16px;width: 1px;background: #888888;float: right;margin-top: 4px;}
+.logonav .nav ul li a{color: #888888;display: inline-block;padding-bottom: 10px;}
+.logonav .nav ul li a:hover{color: #B61B21;}
+.logonav .nav ul li ol{border: 1px solid #E0E0E1;padding-top:7px;border-top: 5px solid #b81c22;height: auto;display: none;z-index: 100;position: relative;background: white;}
+.logonav .nav ul li ol li{margin-top: 18px;}

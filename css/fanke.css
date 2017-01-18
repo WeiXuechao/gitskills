@@ -1,0 +1,41 @@
+#box{width:1200px;height:576px;position:relative;margin:0 auto;margin-top: 32px;}
+#box div{width:1200px;height:576px;position:absolute;left:0;top:0;opacity:0}
+#box .show{opacity:1;z-index:10;}
+#box img{width:100%;height:100%;display: block;border:none;}
+#box a{display: block;width: 1200px;height: 576px;}
+#points{position:absolute;width:176px;bottom:22px;left:50%;margin-left: -88px;z-index:100;overflow:hidden;;}
+#points span{float:left;border-radius:50%;width:15px;height:15px;margin-left: 8px;
+background-color:#eeeeee;z-index:20;}
+#points .bingo{background: #a10000;}
+#box #prev{display:block;left:0px;position: absolute;width: 17px;height: 50px;overflow: hidden;z-index: 50;cursor: pointer;top:279px;top: -9px;}
+#next{right:0px;position: absolute;display: block;width: 17px;height: 50px;overflow: hidden;z-index: 50;cursor: pointer;top: 50%;top: -9px;}
+
+
+.chongzhi{width: 1200px;height: 2260px;margin: 0 auto;margin-top: 36px;}
+.chongzhiTop{width: 1200px;height: 40px;}
+.chongzhi h2{padding-bottom: 47px;padding-top: 63px;text-align: center;color: #a69ab3;font-weight: normal;}
+
+
+.Box{width: 1200px;height: 510px;margin-bottom: 10px;}
+.Box .Boxleft{width: 586px;height: 510px;float: left;margin-right: 15px;border: 1px solid #e8e7ec;overflow: hidden;}
+.Box .Boxmiddle{width:288px;height: 510px;float:left;}
+.Box .Boxmiddle .middletop{width:288px ;height: 248px;margin-bottom: 16px;border: 1px solid #e8e7ec;overflow: hidden;}
+.Box .Boxmiddle .middlebottom{width:288px ;height: 242px;border: 1px solid #e8e7ec;overflow: hidden;}
+.Box .Boxright{width: 282px;height: 510px;float: right;border: 1px solid #e8e7ec;overflow: hidden;}
+.Box h3{height: 66px;font-weight: normal;line-height: 66PX;padding-left: 10PX;}
+.Box h3 #price{float: right;margin-right:12px ;color: #A10000;}
+
+
+.jingxuan{width: 1200px;height:510px;margin: 0 auto;margin-top: 25px;}
+.twodiscount{width: 1200px;height:510px;margin: 0 auto;margin-top:100px;}
+.threediscount{width: 1200px;height:1618px;margin: 0 auto;margin-top:100px;}
+.xx{width: 1200px;height: 506px;}
+.boxx{width: 284px;height: 505;float: left;margin-right: 18px;border: 1px solid #e0e0e1;}
+.boxx h3{height: 66px;font-weight: normal;line-height: 66PX;padding-left: 10PX;}
+.boxx h3 #price{float: right;margin-right:12px ;color: #A10000;}
+
+.fixed{width: 68px;height: 207px;position: fixed;right: 0;bottom: 50px;border: 1px solid #b81b22;border-right: none;}	
+.app{width:68px ;height: 76px;border-bottom: 1px solid #B81B22;}
+.phone{width:68px ;height: 71px;}
+.back{width: 68px;height: 59px;background: #B81B22;text-align: center;}	
+.back span{color: white;width: 68px;height: 59px;display: block;line-height: 75px;}	 

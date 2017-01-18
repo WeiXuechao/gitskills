@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/common.css"/>"
+		<style>
+			.logo{width: 1200px;height:44px;margin: 0 auto;padding-bottom: 12px;border-bottom: 1px solid #7a7f89;line-height: 44px;}
+			.logo-left{width:185px ;height:44px ;float: left;padding-left: 3px;}
+			.logo span{float:right;margin-top: 10px;}
+			.logo span a:hover{text-decoration: underline;color: #B61B21;}
+			.main{width: 1200px;height: 520px;margin: 0 auto;border-bottom: 1px solid #7A7F89;}
+			.main-left{width: 700px;height: 520px;float: left;}
+			.main-right{width: 500px;height: 520px;float: left;}
+			.pic{width: 500px;height: 245px;margin-top: 108px;}
+			.pic img{margin-left: 178px;}
+			.top{width:400px ;height: 24px;margin-top: 50px;margin-bottom: 20px;}
+			.login{width: 400px;height: 410px;border: 1px solid #d1d1d1;}
+			.top h2{float: left;font-size: 24px;color:#979797 ;}
+			.top h6{float: right;font-size: 12px;color: #979797;margin-top: 12px;}
+			 h6 a{color: #B61B21;}
+			 h6 a:hover{text-decoration: underline;}
+			 .logintop{width: 400px;height: 34px;}
+			 .logintop span{float: left;width: 200px;height: 34px;text-align: center;line-height: 34px;color:#656565;background: #f5f5f5;cursor: pointer;
+			 border-bottom: 1px solid #cbcbcb;
+			 }
+			 .login .col{background: #B61B21;color: white;}
+			 .login .square{width: 400px;height: 263px;padding-top: 10px;float: left;border-bottom: 1px dotted #909090;position: relative;}
+			 .login .square input{width: 349px;height: 45px;border: 1px solid #cbcbcb;margin-top: 16px;margin-left: 20px;padding-left: 10px;}
+			 .login .square p{margin-top: 25px;height:14px;margin-bottom: 8px;}
+			 .login .square p a{font-size: 14px;float: right;color: #B61B21;margin-right: 20px;}
+			 .login .square p a:hover{text-decoration: underline;}
+			 .btn{width: 400px;height: 45px;margin-left: 20px;}
+			  #sign{width:359px ;height: 45px;letter-spacing:6px;line-height: 45px;background: #B61B21;font-size: 18px;color: white;cursor: pointer;float:left;text-align: center;}
+			  #sign:hover{font-weight: bold;}
+			 .login .cooperateWeb{width: 400px;height: 95px;float: left;}
+			 .login .cooperateWeb h5{width:380px ;height: 12px;margin-bottom:12px ;margin-top: 19px;font-size: 12px;color: #a4a4a4;padding-left: 20px;}
+			 .login .cooperateWeb p a{float: left;margin-right: 10px;}
+			 .login .cooperateWeb p{padding-left: 20px;}
+			 
+			 .login #square{width: 400px;height: 280px;padding-top: 10px;}
+			 .login #square input{width: 238px;height: 44px;border: 1px solid #cbcbcb;margin-left: 20px;float: left;margin-top: 0;margin-bottom: 16px;padding-left: 10px;}
+			 #yanzhen{width: 96px;height: 44px;border: 1px solid #cbcbcb;float: left;background: #f5f5f5;text-align: center;line-height: 44px;color: #B61B21;margin-left: 10px;margin-bottom: 16px;}
+			 .login #square .yanzheng{width: 132px;}
+			 .login #square .phoneYanzheng{width: 350px;}
+			 
+			 
+			 .footer{width: 1200px;height: 130px;margin: 0 auto;}
+			 .footer p{margin-top:28px ;color: #999999;margin-bottom: 22px;text-align: center;}
+			 .footer img{margin-right: 20px;margin-top: 11px;}
+			 .footerimg{padding-left: 340px;width:860px;height: 50px;}
+			 .footerimg #costumeOrg{width: 154px;height:42px;border: 1px solid #656565;display: inline-block;padding-top: 5px;padding-left: 10px;
+			  	padding-bottom: 5px;margin-right: 15px;
+			 }
+			 .footerimg #costumeOrg img{margin-top: 5px;}
+			 
+			 
+			 
+			 #tip{display: block;width: 220px;height: 16px;color: #a10000;border: 1px solid #cc9998;position: absolute;left: 68px;background: #fff6f7;display: none;}
+			 #tip img{margin-left: 10px;margin-right: 4px;}
+		</style>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript">
+        function main() {
+        		//window.location.reload=break1;
+	            $("#sign").click(function () {
+	                var user=$("#userAccount").val();
+	                var pwd_f = $("#password").val();
+	                var _params = {
+	                    "user": user,
+	                    "password": pwd_f
+	                };
+	                $.post("api/login.php", _params, function (data,textStatus) {
+	                    try{
+							if(data=="0"){
+								//$("#top").html("<a href=\"login.html\">login</a>");
+								$("#tip")[0].style.display="block"
+								$("#tip").html("<img src=\"images/ass_03.jpg\"/>"+"账户不存在")
+							}else{
+								alert("欢迎:"+data+" 光顾!!");
+								window.location.href="fanke.html";
+							}
+	                    }catch (e){
+	                        alert("忘记密码了吗?");
+	                    }
+	                });
+	            });
+	        }
+	        $(function(){
+				main();
+			})
+    	</script>
+	</head>
+	<body>
+		<div class="logo">
+			<div class="logo-left">
+				<a href="fanke.html"><img src="images/logo_11.jpg"/></a>
+			</div>
+				<span><a href="#">帮助</a></span>
+		</div>
+		<div class="main">
+			<div class="main-left">
+				<div class="pic"><img src="images/login_03.jpg"/></div>
+			</div>
+			
+			<div class="main-right">
+				<div class="top">
+					<h2>凡客Vancl登陆</h2>
+					<h6>没有账户免费<a href="register.html">注册</a></h6>
+				</div>
+				<div class="login">
+					<div class="logintop">
+						<span class="col">普通登陆</span>
+						<span>快速登陆</span>
+					</div>
+						<div class="square">
+							<input type="text" placeholder="请输入用户名" id="userAccount"/>
+							<input type="password" placeholder="请输入密码" id="password"/>
+							<span id="tip"></span>
+							<p><a href="#">找回密码</a></p>
+							<div class="btn">
+        						<span id="sign">登陆</span>
+    						</div>
+						</div>
+						
+						<div class="square" id="square"  style="display: none;">
+							<input type="text" placeholder="输入手机号" id="mobile"/> <a href="#" id="yanzhen">获取短信验证码</a>
+							<input type="text" placeholder="验证码" class="yanzheng"/ >
+							<input type="text" placeholder="请输入手机验证码" class="phoneYanzheng"/>
+							<div class="btn">
+        						<span id="sign">登陆</span>
+    						</div>
+						</div>
+						
+						<div class="cooperateWeb">
+							<h5>使用合作网站登陆凡客</h5>
+							<p><a href="#"><img src="images/12_07.jpg"/></a><a href="#"><img src="images/12_09.jpg" /></a><a href="#"><img src="images/12_11.jpg"/></a><a href="#"><img src="images/12_13.jpg"/></a><a href="#"><img src="images/12_15.jpg"/></a><a href="#"><img src="images/12_17.jpg"/></a></p>
+						</div>
+					
+				</div>
+			</div>
+		</div>	
+		<!--
+        	footer
+        -->
+		<div class="footer">
+			<p>Copyright 2007 - 2016 vancl.com All Rights Reserved 京ICP证100557号 京公网安备11010102000579号 出版物经营许可证新出发京批字第直110138号</p>
+			<div class="footerimg"><a rel="nofollow" href="https://search.szfw.org/cert/l/CX20111229001302001330"  target="_blank"><img src="images/as_26.jpg"/></a>
+				<span id="costumeOrg"><img src="images/as_28.jpg"/></span>
+				<a rel="nofollow" href="http://www.315online.com.cn/member/315090053.html" class="wsjyBzzx" target="_blank"><img src="images/as_30.jpg"/></a>
+				<a rel="nofollow" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202010081900017" class="vanclMsg" target="_blank"><img src="images/as_32.jpg"/></a>
+			</div>
+		</div>
+	</body>
+</html>
